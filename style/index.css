@@ -1,1 +1,134 @@
-/* Add CSS styling here */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20em;
+    gap: 1.5em;
+
+}
+
+nav{
+    display: flex;
+    gap: 2em;
+}
+a{
+    text-decoration: none;
+    color: white
+}
+nav a:hover{
+    color: lightsteelblue;
+}
+
+#name{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5em;
+}
+#description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40em;
+    gap: 1.2em;
+}
+
+#main-img{
+    height: 20em;
+    background-image: url("https://picsum.photos/id/142/800/400");
+    background-size: cover;
+}
+#sub-imgs{
+    height: 25em;
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    gap: 2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+}
+.polaroid{
+    height: auto;
+}
+.polaroid img{
+    border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+    body {
+        width: 800px;
+
+    }
+    header {
+        width: 800px;
+    }
+    #description{
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    #main-img{
+        width: 800px;
+        height: 300px;
+    }
+    #sub-imgs{
+        width: 800px;
+        justify-content: center;
+        gap: 1.5em;
+        height: 20em;
+    }
+    #sub-imgs img{
+        width: 200px;
+    }
+}
+@media (max-width: 500px) {
+    body {
+        width: 500px;
+
+    }
+    header {
+        width: 500px;
+    }
+    #description{
+        width: 500px;
+    }
+    #main-img{
+        width: 500px;
+        height: 300px;
+    }
+    #sub-imgs{
+        width: 500px;
+        justify-content: center;
+        gap: 1.5em;
+        height: 20em;
+    }
+    #sub-imgs img{
+        width: 6em;
+    }
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5em;
+    background-color: lightsteelblue;
+    gap: 2em;
+}
+footer a:hover{
+    color: lightgrey;
+}
